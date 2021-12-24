@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@media all and (max-width: 1400px) {
+}
+
+@media all and (max-width: 1280px) {
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  #main > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aside article {
+    flex-direction: column;
+  }
+  #first-aside {
+    height: 800px;
+  }
+  #second-aside {
+    height: 400px;
+  }
+  section h3 {
+    font-size: 5rem;
+  }
+  .content-box {
+    padding: 3em 3em;
+  }
+}
+@media all and (max-width: 540px) {
+  #main > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-box {
+    padding: 3em 2em;
+  }
+  .face {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .content-box {
+    padding: 3em 1.5em;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .tool img {
+    width: 80px;
+  }
+}
+@media all and (max-width: 360px) {
+  h5 {
+    font-size: 3.5rem;
+  }
+  .aside h3 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Default */
+body {
+  font-family: "GmarketSansLight";
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+h1 {
+  font-family: "GmarketSansBold";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 888;
+  font-size: 7rem;
+  width: 100%;
+  text-align: center;
+  color: #222;
+  font-weight: 600;
+  font-style: italic;
+  -webkit-animation: tracking-in-expand 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: tracking-in-expand 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+}
+
+h1 img {
+  display: block;
+  width: 42px;
+  height: auto;
+  margin: 0 auto;
+  animation: mousedown 1s infinite;
+}
+
+@-webkit-keyframes mousedown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+@keyframes mousedown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  clip-path: circle(0px at center);
+}
+
+section h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  color: #fff;
+  z-index: 555;
+  text-align: center;
+  line-height: 1.5;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "GmarketSansBold";
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  font-weight: 100;
+}
+section h3 span {
+  color: rgb(255, 255, 255);
+  font-family: "GmarketSansMedium";
+}
+
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-fit: right;
+}
+
+.content-box {
+  position: relative;
+  margin-top: 200vh;
+  background-color: #fff;
+  padding: 3em 5em;
+  font-size: 2rem;
+}
+
+.space {
+  margin-bottom: 10%;
+}
+
+.space:last-of-type {
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GmarketSansBold";
+  color: #111;
+  font-style: italic;
+}
+
+#profile {
+  text-align: center;
+}
+
+.face {
+  width: 250px;
+  height: auto;
+}
+
+#profile p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2em;
+  display: inline-block;
+  border: 1px solid #aaa;
+  padding: 0.5em 1.5em;
+  border-radius: 10em;
+  margin-top: 20px;
+  font-family: "GmarketSansMedium";
+}
+
+#profile em {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.tool {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tool img {
+  width: 100px;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+#main {
+  width: 100%;
+}
+
+#main h5 {
+  margin-bottom: 1em;
+}
+
+#main > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+#main article {
+  position: relative;
+  text-align: center;
+  height: 300px;
+  cursor: pointer;
+}
+
+#main .pic {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+#main .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  object-position: center;
+}
+
+#main .pic img.right {
+  object-position: right;
+}
+
+.txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#main article:hover .txt {
+  opacity: 1;
+}
+.txt h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: #fff;
+}
+.txt a {
+  font-size: 1.6rem;
+  color: #fff;
+  border: 1px solid rgb(245, 245, 245);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+}
+.aside {
+  width: 100%;
+  text-align: center;
+}
+
+.aside h3 {
+  font-size: 3rem;
+  margin: 1em auto;
+  color: #111;
+  font-family: "GmarketSansMedium";
+}
+
+.aside article {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.aside article div {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+}
+
+.aside article div:hover {
+  flex: 2;
+}
+
+.aside article div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.aside p {
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.7);
+  color: #fff;
+  bottom: 0;
+  left: -100%;
+  font-size: 1.6rem;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.aside article div:hover p {
+  left: 0;
+}
